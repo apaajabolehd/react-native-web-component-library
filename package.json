@@ -1,6 +1,7 @@
 {
-  "name": "component-library",
+  "name": "react-native-web-component-library",
   "version": "1.0.0",
+  "author": "Oguzhan Cakmak <oguzhanmc@gmail.com>",
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/main.js",
