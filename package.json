@@ -1,13 +1,35 @@
 {
   "name": "component-library",
   "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "alias": {
+    "react-native": "react-native-web"
+  },
   "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@storybook/addon-actions": "^6.4.9",
+    "@storybook/addon-essentials": "^6.4.9",
+    "@storybook/addon-links": "^6.4.9",
+    "@storybook/react": "^6.4.9",
+    "@types/react": "^17.0.38",
+    "@types/react-native": "^0.66.11",
+    "babel-loader": "^8.2.3",
     "parcel": "^2.0.1",
-    "react": "^17.0.2",
+    "typescript": "^4.5.4"
+  },
+  "scripts": {
+    "start": "parcel watch",
+    "build": "parcel build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "dependencies": {
     "react-dom": "^17.0.2",
     "react-native-web": "^0.17.5",
-    "typescript": "^4.5.4"
+    "react": "^17.0.2"
   }
 }
