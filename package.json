@@ -6,6 +6,7 @@
   "source": "src/index.ts",
   "main": "dist/main.js",
   "module": "dist/module.js",
+  "react-native": "src/index.ts",
   "types": "dist/types.d.ts",
   "alias": {
     "react-native": "react-native-web"
