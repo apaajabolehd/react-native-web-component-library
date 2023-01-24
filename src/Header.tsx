@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ActivityIndicator } from "react-native";
 
 const styles = StyleSheet.create({
   header: {
@@ -19,11 +19,12 @@ interface HeaderProps {
 }
 
 export const Header: React.FC<HeaderProps> = ({
-  backgroundColor = "purple",
+  backgroundColor = "red",
 }) => {
   return (
     <View style={[styles.header, { backgroundColor }]}>
-      <Text style={styles.headerText}>I am the first component</Text>
+      <Text style={styles.headerText}>I am the third component</Text> 
+      <ActivityIndicator />
     </View>
   );
 };
